@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 20px;
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1,h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+}
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+    hyphens: auto;
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px){
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        gap: 20px;
+    }
+}
+
+span{
+    color: #ff4d4d;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px){
+        margin-bottom: 0;
+        margin-right: 20px;
+        flex-basis: 50%;
+        flex-grow: 0;
+    }
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #009FFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    &:hover{
+        background-color: #0086e6;
+    }
+}
